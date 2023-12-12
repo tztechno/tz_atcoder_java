@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -37,4 +36,22 @@ public class Main {
             System.out.println("Invalid input. Please enter two space-separated numbers.");
         }
     }
+}
+
+##############################################
+
+import java.util.Scanner;
+public class Main {	
+	public static void main(String[] args) {		
+		Scanner input = new Scanner(System.in);	
+		String A = input.next();
+		String B = input.next();
+		int a = 0;
+		int b = 0;		
+		for (int i = 0; i < 3; i++) {
+			a += (A.charAt(i) - '0');
+			b += (B.charAt(i) - '0');
+		}		
+		System.out.println(a >= b ? a:b);
+	}
 }
